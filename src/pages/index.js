@@ -3,7 +3,9 @@ import React from 'react'
 
 function Home() {
   return (
-    <Hero />
+    <section className='project'>
+      <Hero />
+    </section>
   )
 }
 

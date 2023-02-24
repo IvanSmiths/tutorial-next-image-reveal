@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 :root {
@@ -12,10 +13,29 @@ body {
   --secondaryBlueColor: #7895BF;
   --secondaryRedColor: #E53945;
 
-  --headlineBig: clamp(5rem, 9.9vw, 15rem);
+  --headlineBig: clamp(4rem, 6.9vw, 15rem);
   --headlineMedium: clamp(1rem, 2vw, 4rem);
   --headlineSmall: clamp(0.6rem, 0.75vw, 1.3rem);
 
   --borderSize: 1px;
   --borderRadius: 10px;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.project {
+  padding: 5% 7%;
+}
+
+.project__header {
+  padding-right: 20%;
+}
+
+.project__header>h1 {
+  font-size: var(--headlineBig);
+  color: var(--primaryBlueColor);
 }

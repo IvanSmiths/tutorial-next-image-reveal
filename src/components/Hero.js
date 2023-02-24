@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
     return (
-        <div className='header'>
+        <div className='project__header'>
             <h1>Case Studies
                 & Projects</h1>
         </div>
