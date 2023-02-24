@@ -11,4 +11,11 @@ body {
   --primaryBlueColor: #1D3557;
   --secondaryBlueColor: #7895BF;
   --secondaryRedColor: #E53945;
+
+  --headlineBig: clamp(5rem, 9.9vw, 15rem);
+  --headlineMedium: clamp(1rem, 2vw, 4rem);
+  --headlineSmall: clamp(0.6rem, 0.75vw, 1.3rem);
+
+  --borderSize: 1px;
+  --borderRadius: 10px;
 }
