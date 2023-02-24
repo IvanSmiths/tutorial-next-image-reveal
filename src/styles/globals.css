@@ -63,11 +63,13 @@ li {
   width: 40%;
 }
 
-.project__single__image {
+.project__single__image-wrapper {
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
   width: 100%;
 }
 
-.project__single__image img {
+.project__single__image-wrapper img {
+  scale: 1.3;
   width: 100%;
 }
 

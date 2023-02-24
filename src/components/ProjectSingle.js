@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 
-function ProjectSingle({ project }) {
+function ProjectSingle({ project, setProjectsRef }) {
 
     return (
-        <div className={`${project.hasMargin === true ? "projects__single projects__single-margin" : "projects__single"} `}>
-            <div className='project__single__image'>
-                <Link href={project.link}>
-                    <img src={project.image} alt={project.name} />
+        <div ref={setProjectsRef} className={`${project.hasMargin === true ? "projects__single projects__single-margin" : "projects__single"} `}>
+            <div className='project__single__image-wrapper'>
+                <Link className='wrapper' href={project.link}>
+                    <img className='project__single__image' src={project.image} alt={project.name} />
                 </Link>
             </div>
             <div className='project__single__details'>

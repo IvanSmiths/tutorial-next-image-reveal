@@ -1,3 +1,4 @@
+// the booloean isMargin is there just for styling purposes
 export const projects = [
     {
         name: "Portfolio Website",
