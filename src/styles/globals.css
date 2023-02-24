@@ -27,15 +27,15 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.project {
+.projects {
   padding: 5% 7%;
 }
 
-.project__header {
+.projects__header {
   padding-right: 20%;
 }
 
-.project__header>h1 {
+.projects__header>h1 {
   font-size: var(--headlineBig);
   color: var(--primaryBlueColor);
 }

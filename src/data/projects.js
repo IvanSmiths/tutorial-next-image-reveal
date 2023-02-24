@@ -1,32 +1,38 @@
 export const projects = [
     {
+        name: "Portfolio Website",
         image: "/project-1.png",
-        stack: ["Next.js", "Gsap", "Css"],
+        technologies: ["Next.js", "Gsap", "Css"],
         link: "/"
     },
     {
+        name: "Fitness tracker",
         image: "/project-2.png",
-        stack: ["TypeScript", "Trpc", "Tailwind", "Prisma"],
+        technologies: ["TypeScript", "Trpc", "Tailwind", "Prisma"],
         link: "/"
     },
     {
+        name: "Pomodoro app",
         image: "/project-3.png",
-        stack: ["JavaScript", "Css"],
+        technologies: ["JavaScript", "Css"],
         link: "/"
     },
     {
+        name: " Personal Blog",
         image: "/project-4.png",
-        stack: ["Svelte.js", "Gsap", "Tailwind"],
+        technologies: ["Svelte.js", "Gsap", "Tailwind"],
         link: "/"
     },
     {
+        name: "Ecommerce",
         image: "/project-5.png",
-        stack: ["Html", "Css", "JavaScript"],
+        technologies: ["Html", "Css", "JavaScript"],
         link: "/"
     },
     {
+        name: "Weather app",
         image: "/project-6.png",
-        stack: ["Next.js", "Gsap", "Css"],
+        technologies: ["Next.js", "Gsap", "Css"],
         link: "/"
     },
 ]
