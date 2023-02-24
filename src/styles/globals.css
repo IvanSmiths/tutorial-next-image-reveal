@@ -42,7 +42,7 @@ li {
 }
 
 .projects__header {
-  height: 80vh;
+  height: 70vh;
   padding-right: 20%;
 }
 
@@ -130,5 +130,11 @@ li {
 
   .projects__single ul {
     margin-top: var(--spacingSmall);
+  }
+
+  .projects__header {
+    height: auto;
+    padding-bottom: 20%;
+    padding-right: 0;
   }
 }
