@@ -4,9 +4,13 @@ import React from 'react'
 function ProjectSingle({ project }) {
 
     return (
-        <div>
-            <img src={project.image} alt={project.name} />
-            <div>
+        <div className={`${project.hasMargin === true ? "projects__single projects__single-margin" : "projects__single"} `}>
+            <div className='project__single__image'>
+                <Link href={project.link}>
+                    <img src={project.image} alt={project.name} />
+                </Link>
+            </div>
+            <div className='project__single__details'>
                 <h2>{project.name}</h2>
                 <Link href={project.link}>
                     Discover

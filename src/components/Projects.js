@@ -7,9 +7,7 @@ function Projects() {
     return (
         <main className='projects__outer'>
             {projects.map((project) => (
-                <div key={project.name}>
-                    <ProjectSingle project={project} />
-                </div>
+                <ProjectSingle key={project.name} project={project} />
             ))}
         </main>
     )
