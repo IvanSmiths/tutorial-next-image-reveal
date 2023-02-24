@@ -64,11 +64,13 @@ li {
 }
 
 .project__single__image-wrapper {
+  /*important for the animation */
   clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
   width: 100%;
 }
 
 .project__single__image-wrapper img {
+  /*important for the animation */
   scale: 1.3;
   width: 100%;
 }

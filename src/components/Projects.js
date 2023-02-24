@@ -8,6 +8,7 @@ import ProjectSingle from './ProjectSingle'
 function Projects() {
     const [projectsRef, setProjectsRef] = useArrayRef();
 
+    // function for making an array of refs
     function useArrayRef() {
         const projectsRef = useRef([]);
         projectsRef.current = [];
@@ -18,7 +19,9 @@ function Projects() {
 
     useEffect(() => {
         projectsRef.current.forEach((project) => {
+            // select wrapper of each ref for the reveal animation
             const wrapper = project.querySelector('.project__single__image-wrapper');
+            // select image of each ref for the image animation
             const image = project.querySelector('.project__single__image');
             const tl = gsap.timeline({
                 scrollTrigger: {
@@ -33,6 +36,8 @@ function Projects() {
                 duration: 2,
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
             })
+            // the "<" sign means that this animation of the timeline will play 
+            // as soon the animation get triggered
             tl.to(image, {
                 duration: 2,
                 scale: 1
