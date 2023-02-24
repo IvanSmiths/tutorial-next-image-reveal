@@ -1,0 +1,14 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgroundColor: #ECECEC;
+  --primaryBlueColor: #1D3557;
+  --secondaryBlueColor: #7895BF;
+  --secondaryRedColor: #E53945;
+}
