@@ -6,12 +6,22 @@ import ProjectSingle from './ProjectSingle'
 
 
 function Projects() {
+    // custom hook which works really similarly like useState but it have some differences.
+    // The first value is a state variable that get initialized using the custom hook
+    // The second value works as a function to update the first value, 
+    // which is equal to an empty array
     const [projectsRef, setProjectsRef] = useArrayRef();
 
     // function for making an array of refs
     function useArrayRef() {
         const projectsRef = useRef([]);
         projectsRef.current = [];
+        // returns an array of two values:
+        // The first is the state variable declared before
+        // The second one is a function that takes an argument, in this case "ref". 
+        // If "ref" is truthy (so if is not equal to null, undefiend, 0 or false),
+        // it will push "ref" into the "projectsRef.current" and it will be possible just by 
+        // referencing elements in the DOM wizth the "setProjectsRef" as a "ref"
         return [projectsRef, (ref) => ref && projectsRef.current.push(ref)];
     }
 
